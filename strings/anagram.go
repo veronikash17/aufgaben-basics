@@ -5,6 +5,9 @@ package strings
 // enthält, aber nicht unbedingt in der gleichen Reihenfolge.
 func IsAnagram(s1, s2 string) bool {
 	// TODO
+	
+
+
 	return false
 }
 
@@ -14,5 +17,7 @@ func IsAnagram(s1, s2 string) bool {
 // Diese Funktion soll keinen Unterschied zwischen Groß- und Kleinschreibung machen.
 func IsAnagramIgnoreCase(s1, s2 string) bool {
 	// TODO
+
+
 	return false
 }
