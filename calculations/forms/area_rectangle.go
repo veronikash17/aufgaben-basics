@@ -6,5 +6,5 @@ func AreaRectangle(a, b float64) float64 {
 	// TODO
 
 	
-	return 0
+	return a *b 
 }
