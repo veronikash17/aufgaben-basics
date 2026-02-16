@@ -14,13 +14,13 @@ func CountA(s string) int {
 // Erwartet einen string s und einen Buchstaben c.
 // Zählt, wie oft c in s vorkommt.
 func CountChar(s string, c rune) int {
-
 	result := 0
-	for _, char := range s {
-		if char == c {
-			result++
+
+	for _, char := range s{
+		if char == c{
+			result ++
 		}
 	}
-	return result
 
+	return result
 }

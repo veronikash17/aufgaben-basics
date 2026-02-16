@@ -6,5 +6,10 @@ package strings
 // Kommt c mehrfach vor, soll die erste Position geliefert werden.
 func PositionOf(s string, c byte) int {
 	// TODO
-	return 0
+	for i:= range s{
+		if s[i]== c{
+			return i
+		}
+	}
+	return len(s)
 }
