@@ -5,16 +5,17 @@ import "fmt"
 // Der Rand des Rechtecks soll aus `#`-Zeichen bestehen, der Innenraum soll leer sein.
 func DrawEmptyRectangle(height, width int) {
 	// TODO
-	for row := 0; row < height; row++ {
-		for col := 0; col < width; col++ {
-			if col == 0 || row == height-1 || row == 0 || col == width-1 {
+	for i:=0; i<height; i++{
+		for r:=0; r<width;r++{
+			if i==0 || r==0 || r==width-1 || i==height-1{
 				fmt.Print("#")
-			} else {
+			}else{
 				fmt.Print(" ")
 			}
 		}
-		fmt.Println()
+fmt.Println()
 	}
+
 }
 
 // REMARKS

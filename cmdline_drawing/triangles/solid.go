@@ -8,8 +8,8 @@ import "fmt"
 // vertikal bzw. horizontal verlaufen.
 func DrawSolidTriangle(length int) {
 	// TODO
-	for row := 0; row < length; row++ {
-		for col := 0; col <= row; col++ {
+	for row:=0;row<length;row++{
+		for col:=0; col<=row; col++{
 			fmt.Print("#")
 		}
 		fmt.Println()

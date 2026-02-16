@@ -1,10 +1,20 @@
 package make_unique
-
+import "fmt"
 // Erwartet eine Liste von Strings.
 // Hängt Zahlen an alle mehrfach vorkommenden Strings an, um sie eindeutig zu machen.
 func MakeUnique(strings []string) {
-	// TODO
+	for i, s := range strings {
+		count := 2
+		for j := i + 1; j < len(strings); j++ {
+			if strings[j] == s {
+				strings[j] = fmt.Sprintf("%s_%d", s, count)
+				count++
+			}
+		}
+	}
 }
+
+
 
 // REMARKS
 // - Dies ist eine ähnliche Aufgabe wie das Zählen von Vorkommen in einer Liste.

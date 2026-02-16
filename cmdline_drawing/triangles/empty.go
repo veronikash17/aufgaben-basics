@@ -8,16 +8,18 @@ import "fmt"
 // Der Rand des Dreiecks soll aus `#`-Zeichen bestehen, der Innenraum soll leer sein.
 func DrawEmptyTriangle(length int) {
 	// TODO
-	for row := 0; row < length; row++ {
-		for col := 0; col <= row; col++ {
-			if col == 0 || row == length-1 || col == row {
+	for row:=0; row<length; row++{
+		for col:=0; col<=row;col++{
+			if col==0 || row==length-1 || col == row{
 				fmt.Print("#")
-			} else {
+			}else {
 				fmt.Print(" ")
 			}
+			
 		}
 		fmt.Println()
 	}
+
 }
 
 // REMARKS

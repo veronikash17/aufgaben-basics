@@ -5,9 +5,10 @@ import "fmt"
 // Das Quadrat soll komplett mit `#`-Zeichen gefüllt sein.
 func DrawSolidSquare(length int) {
 	// TODO
-	for row :=0; row < length; row ++ {
-		for col :=0; col<length; col++{
+	for i:=0; i<length; i++{
+		for r:=0; r<length;r++{
 			fmt.Print("#")
+
 		}
 		fmt.Println()
 	}

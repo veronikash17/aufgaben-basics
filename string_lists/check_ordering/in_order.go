@@ -5,9 +5,19 @@ package check_ordering
 // Gibt `true` zurück, wenn das der Fall ist, ansonsten `false`.
 func CheckOrdering(strings []string, first, second string) bool {
 	// TODO
-	return false
-}
+	pos1:= -1
+	pos2:= -1
+	for i, s := range strings{
+		if s==first{
+			pos1 =i
+		}
+		if  s==second{
+			pos2 =i
+		}
+	}
 
+	return pos1 < pos2
+}
 // REMARKS
 // - Diese Aufgabe ist eine komplexere Variante der Aufgabe "Prüfen, ob ein Element in einer Liste vorkommt".
 // - Sie können die Lösung der einfachen Variante als Grundlage verwenden und diese entsprechend erweitern.

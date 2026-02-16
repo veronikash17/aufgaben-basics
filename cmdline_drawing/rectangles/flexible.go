@@ -5,13 +5,14 @@ import "fmt"
 // Die Zeichen für Rand und Füllung des Rechtecks werden als Parameter erwartet.
 func DrawRectangle(height, width int, inner, outer string) {
 	// TODO
-	for row := 0; row < height; row++ {
-		for col := 0; col < width; col++ {
-			if row == 0 || row == height-1 || col == 0 || col == width-1 {
+	for row:=0; row<height; row++{
+		for col:=0; col<width; col++{
+			if col ==0 || row == height-1 || col == width-1 || row == 0 {
 				fmt.Print(outer)
 			} else {
 				fmt.Print(inner)
 			}
+
 		}
 		fmt.Println()
 	}

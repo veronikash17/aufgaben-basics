@@ -5,10 +5,11 @@ import "fmt"
 // Das Rechteck soll komplett mit `#`-Zeichen gefüllt sein.
 func DrawSolidRectangle(height, width int) {
 	// TODO
-	for row := 0; row < height; row++ {
-		for col := 0; col < width; col++ {
+	for i:=0;i<height;i++{
+		for a:=0; a<width; a++{
 			fmt.Print("#")
 		}
 		fmt.Println()
 	}
+
 }

@@ -1,6 +1,10 @@
 package strings
 
-import "fmt"
+
+import (
+	"fmt"
+	
+)
 
 func ExampleIsAnagram() {
 	fmt.Println(IsAnagram("ABC", "CBA"))
